@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transparência - Gestão de Condomínios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"IBM Plex Sans"', 'sans-serif'],
+            },
+            colors: {
+              carbon: {
+                900: '#161616', // Gray 100
+                800: '#262626', // Gray 90
+                700: '#393939', // Gray 80
+                600: '#525252', // Gray 70
+                500: '#6f6f6f', // Gray 60
+                400: '#8d8d8d', // Gray 50
+                300: '#a8a8a8', // Gray 40
+                200: '#c6c6c6', // Gray 30
+                100: '#e0e0e0', // Gray 20
+                50:  '#f4f4f4', // Gray 10
+              },
+              primary: {
+                600: '#0f62fe', // Blue 60
+                700: '#0043ce', // Blue 70
+                hover: '#0353e9',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #f4f4f4;
+        color: #161616;
+      }
+
+      /* Global Scrollbar Styling */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: #c6c6c6;
+        border-radius: 3px;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: #8d8d8d;
+      }
+
+      /* Dark Theme Scrollbar (for Network Map etc) */
+      .dark-scroll ::-webkit-scrollbar-thumb {
+        background: #393939;
+      }
+      .dark-scroll ::-webkit-scrollbar-thumb:hover {
+        background: #525252;
+      }
+      
+      /* Specific override for the dark map container if it doesn't use the class */
+      .bg-\[\#111\] ::-webkit-scrollbar-track {
+        background: #161616;
+      }
+      .bg-\[\#111\] ::-webkit-scrollbar-thumb {
+        background: #393939;
+        border-radius: 4px;
+        border: 1px solid #161616;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.0",
+    "axios": "https://aistudiocdn.com/axios@^1.13.2",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
